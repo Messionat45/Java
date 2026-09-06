@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 class BankAccount {
     
     static int balance = 1000; // making this static makes single balance variable for entire class.
@@ -17,10 +15,10 @@ class BankAccount {
 
         tejas.withdraw(200);
 
-        System.out.println(tejas.balance);
+        System.out.println(balance);
 
           raj.withdraw(600);
-        System.out.println(raj.balance);
+        System.out.println(balance);
 
         // added statis balance variable at top, balance is used as common vriable fo rteh entire class.
     }
