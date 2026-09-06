@@ -14,6 +14,13 @@ public class Constructor {
         this.salary = balance;
     }
 
+    // constructor overloadinig , class dpends what to call according to arguments 
+    Constructor(String name){
+        this.name = name;
+        this.balance = 0;
+        this.salary= 1000;
+    }
+
     void withdraw(int amount){
         balance -= amount;
     }
@@ -27,9 +34,11 @@ public class Constructor {
 
         Constructor tejas = new Constructor("tejas", 10000);
         Constructor raj = new Constructor("raj", 5000);
+        Constructor vi = new Constructor("vi");
 
         System.out.println(tejas.name + ": "+tejas.balance);
         System.out.println(raj.balance);
+         System.out.println(vi.name+ " "+ vi.balance+" sal "+ vi.salary);
 
         tejas.withdraw(200);
         System.out.println(tejas.balance);
