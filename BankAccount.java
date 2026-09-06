@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 class BankAccount {
     
-    int balance = 1000;
+    static int balance = 1000; // making this static makes single balance variable for entire class.
 
     // Here withdraw() shouldn't normally be static.
     // Because different objects have different balances:
@@ -16,9 +16,12 @@ class BankAccount {
         BankAccount raj = new BankAccount();
 
         tejas.withdraw(200);
-        raj.withdraw(600);
 
         System.out.println(tejas.balance);
+
+          raj.withdraw(600);
         System.out.println(raj.balance);
+
+        // added statis balance variable at top, balance is used as common vriable fo rteh entire class.
     }
 }
