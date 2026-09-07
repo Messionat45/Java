@@ -4,6 +4,10 @@ interface Vehicle {
     void brake(int n);
     
 }
+
+interface GPS{
+    void location();
+}
 public class Interface implements Vehicle {
        public void car(){
             System.out.println("i drew car");
@@ -22,7 +26,7 @@ public class Interface implements Vehicle {
 // defined method must be kept in public access secifier.
 
 // later lets suppse i have another class sportsvehicle
-class Sportsvehicle implements Vehicle{
+class Sportsvehicle implements Vehicle, GPS{
      public void car(){
             System.out.println("i drew sports car");
         }
@@ -33,6 +37,11 @@ class Sportsvehicle implements Vehicle{
         public void brake(int n){
             System.out.println("brke to spots for "+ n);
         }
+
+        // 2nd interface 
+        public void location(){
+            System.out.println("I am at ____ hpuse");
+        }
 }
 
 class Main {
@@ -42,9 +51,12 @@ class Main {
         obj.brake(6);
         obj.bike();
         obj.car();
+        // obj.location();
         
-        Vehicle v2 = new Sportsvehicle();
+        Sportsvehicle v2 = new Sportsvehicle();
     v2.car();
+    v2.location();
+
 
     }
 
