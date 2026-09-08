@@ -57,7 +57,7 @@ class Main {
     v2.car();
     v2.location();
 
-
+  
     }
 
     
