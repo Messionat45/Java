@@ -1,3 +1,4 @@
+package javabase;
 interface driving{
     void driveVehicle();
 }

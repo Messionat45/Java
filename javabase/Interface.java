@@ -1,3 +1,4 @@
+package javabase;
 interface Vehicle {
     void car();
     void bike();

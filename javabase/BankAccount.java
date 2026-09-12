@@ -1,3 +1,4 @@
+package javabase;
 class BankAccount {
     
     static int balance = 1000; // making this static makes single balance variable for entire class.

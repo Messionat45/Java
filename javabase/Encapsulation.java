@@ -1,3 +1,4 @@
+package javabase;
 class Encapsulation {
     
     private int balance;

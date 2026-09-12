@@ -1,3 +1,4 @@
+package javabase;
 public class Inheritence {
     int name;
     int age;
